@@ -1,26 +1,95 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { Modal, Row, Col, Container } from 'react-bootstrap';
+import ShowDetails from './components/ShowDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showsAiring: [],
+      openDetails: [],
+    };
+
+    this.closeDetails = this.closeDetails.bind(this);
+  }
+
+  //open a specific modal
+  openDetails(id) {
+    this.setState({
+      openDetails: {
+        [id]: true
+      }
+    });
+  }
+
+  //close a modal
+  closeDetails() {
+    this.setState({ openDetails: false });
+  }
+
+  handleShowDetails() {
+    this.openDetails();
+  }
+
+  componentDidMount() {
+
+    //load shows airing list from TVmaze API
+    fetch("http://api.tvmaze.com/schedule")
+      .then(res => res.json())
+      .then(
+        (results) => {
+          this.setState({
+            showsAiring: results
+          });
+        })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {/* <Header /> */}
+        <Container>
+          <Row>
+            {this.state.showsAiring.map((item, i) => {
+              return (
+                <Col key={i} md={3} sm={4} xs={12}>
+                  <div
+                    style={{ transitionDelay: '0.' + i + 's' }}
+                    className="thumb center-block"
+                  >
+                    <div className="thumbImageContainer">
+                      <div
+                        className="thumbImage"
+                        style={{
+                          background: item.show.image ?
+                            'url('+ item.show.image.medium +')' : '#333'
+                        }}
+                      />
+                      <div className="thumbImageOverlayContainer"
+                        onClick={this.openDetails.bind(this, i)}
+                      >
+                        <div className="thumbImageOverlay">
+                        </div>
+                      </div>
+                    </div>
+                    <div className="thumbTitle">{item.show.name}</div>
+                  </div>
+                  <Modal
+                    bssize="large"
+                    show={this.state.openDetails[i] || false}
+                    onHide={this.closeDetails}
+                  >
+                    <ShowDetails id={item.show.id} />
+                  </Modal>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      </div>
+    );
+  }
 }
 
 export default App;
