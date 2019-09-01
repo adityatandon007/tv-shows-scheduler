@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tv-shows-scheduler/static/css/main.b53528ab.chunk.css",
+    "main.js": "/tv-shows-scheduler/static/js/main.b3b7881b.chunk.js",
+    "main.js.map": "/tv-shows-scheduler/static/js/main.b3b7881b.chunk.js.map",
+    "runtime~main.js": "/tv-shows-scheduler/static/js/runtime~main.b9eca11a.js",
+    "runtime~main.js.map": "/tv-shows-scheduler/static/js/runtime~main.b9eca11a.js.map",
+    "static/js/2.82f28157.chunk.js": "/tv-shows-scheduler/static/js/2.82f28157.chunk.js",
+    "static/js/2.82f28157.chunk.js.map": "/tv-shows-scheduler/static/js/2.82f28157.chunk.js.map",
+    "index.html": "/tv-shows-scheduler/index.html",
+    "precache-manifest.41a0d6c1b14121f72100ce3a31132886.js": "/tv-shows-scheduler/precache-manifest.41a0d6c1b14121f72100ce3a31132886.js",
+    "service-worker.js": "/tv-shows-scheduler/service-worker.js",
+    "static/css/main.b53528ab.chunk.css.map": "/tv-shows-scheduler/static/css/main.b53528ab.chunk.css.map"
+  }
+}
