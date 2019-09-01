@@ -143,35 +143,6 @@ a {
   font-size: 14px; 
 }
 
-.thumbSubtitle {
+.thumbAirtime {
   font-size: 12px; 
-}
-
-.thumbSubtitle ul {
-  margin: 0;
-  padding: 0; 
-}
-
-.thumbSubtitle ul li {
-  color: #DAE0D4;
-  list-style-type: none;
-  display: inline;
-  margin: 0;
-  padding: 0; 
-}
-
-.thumbSubtitle ul li:after {
-  content: ', '; 
-}
-
-.thumbSubtitle ul li:last-child:after {
-  content: ""; 
-}
-
-.rating {
-  position: absolute;
-  color: #333;
-  font-size: 16px;
-  margin-top: 242px;
-  margin-left: 140px; 
 }

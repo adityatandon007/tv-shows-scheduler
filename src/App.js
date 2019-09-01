@@ -63,7 +63,7 @@ class App extends Component {
           <Row>
             {this.state.showsAiring.map((item, i) => {
               return (
-                <Col key={i} md={3} sm={4} xs={12}>
+                <Col key={i} lg={3} md={4} sm={6} xs={12}>
                   <div
                     style={{ transitionDelay: '0.' + i + 's' }}
                     className="thumb center-block"
@@ -84,6 +84,7 @@ class App extends Component {
                       </div>
                     </div>
                     <div className="thumbTitle">{item.show.name}</div>
+                    <div className="thumbAirtime">{item.show.schedule.time}</div>
                   </div>
                   <Modal
                     bssize="large"

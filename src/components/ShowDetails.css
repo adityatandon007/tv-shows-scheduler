@@ -37,11 +37,6 @@ button.close:hover {
   opacity: 0.2; 
 }
 
-.media-body {
-  vertical-align: middle;
-  overflow: initial !important;
-}
-
 .showsDetails {
   min-height: 500px;
   background-size: cover !important;
@@ -67,17 +62,17 @@ button.close:hover {
   transition: all .3s ease-in-out; 
 }
 
-.showsList {
+.showsSchedule {
   padding-bottom: 20px; 
 }
-.showsList ul {
+.showsSchedule ul {
   margin: 0;
   padding: 0;
   color: #DAE0D4;
   font-weight: bold;
   text-transform: uppercase; 
 }
-.showsList ul li {
+.showsSchedule ul li {
   list-style-type: none;
   display: inline;
   margin: 0;
@@ -86,10 +81,10 @@ button.close:hover {
   font-weight: normal;
   text-transform: none; 
 }
-.showsList ul li:after {
+.showsSchedule ul li:after {
   content: ', '; 
 }
-.showsList ul li:last-child:after {
+.showsSchedule ul li:last-child:after {
   content: ""; 
 }
 
@@ -101,14 +96,9 @@ button.close:hover {
     margin-bottom: 5px;
     color: #fff; 
   }
-  .showsName, .showsDate {
+  .showsName {
     display: inline; 
   }
-  .showsDate {
-    color: #DAE0D4;
-    font-size: 21px;
-    padding: 0 10px; 
-  } 
 }
 
 @media (max-width: 991px) {
@@ -118,14 +108,12 @@ button.close:hover {
     margin-bottom: 5px;
     color: #fff; 
   }
-  .showsName, .showsDate {
+  .showsSubtitle {
+    padding-bottom: 20px;
+  }
+  .showsName {
     display: block; 
   }
-  .showsDate {
-    color: #DAE0D4;
-    font-size: 24px;
-    padding: 0; 
-  } 
 }
 
 .showsOverview {
