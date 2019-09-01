@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Modal, Row, Col, Container } from 'react-bootstrap';
+import { Modal, Row, Col, Container, Navbar } from 'react-bootstrap';
 import ShowDetails from './components/ShowDetails';
 
 class App extends Component {
@@ -48,7 +48,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Header /> */}
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand>
+            <img
+              alt=""
+              src="/logo.svg"
+              width="30"
+              height="30"
+            />
+            {'Shows Airing Today in USA'}
+          </Navbar.Brand>
+        </Navbar>
         <Container>
           <Row>
             {this.state.showsAiring.map((item, i) => {
