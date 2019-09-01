@@ -16,7 +16,7 @@ class ShowDetails extends Component {
 
     //load TV show details from TVmaze API
     let id = this.props.id;
-    fetch(`http://api.tvmaze.com/shows/${id}`)
+    fetch(`https://api.tvmaze.com/shows/${id}`)
       .then(
         (response) => response.json()
       )

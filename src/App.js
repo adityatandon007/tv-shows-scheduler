@@ -35,7 +35,7 @@ class App extends Component {
   componentDidMount() {
 
     //load shows airing list from TVmaze API
-    fetch("http://api.tvmaze.com/schedule")
+    fetch("https://api.tvmaze.com/schedule")
       .then(res => res.json())
       .then(
         (results) => {
