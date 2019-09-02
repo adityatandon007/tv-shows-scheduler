@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Modal, Row, Col, Container, Navbar } from 'react-bootstrap';
+import { Modal, Row, Col, Container, Navbar, Button } from 'react-bootstrap';
 import ShowDetails from './components/ShowDetails';
 
 class App extends Component {
@@ -9,9 +9,27 @@ class App extends Component {
     this.state = {
       showsAiring: [],
       openDetails: [],
+      theme: 'light'
     };
 
     this.closeDetails = this.closeDetails.bind(this);
+    this.setTheme = this.setTheme.bind(this);
+    this.toggleTheme = this.toggleTheme.bind(this);
+  }
+
+  //setting theme
+  setTheme(theme) {
+    this.setState({ theme: theme });
+  }
+
+  toggleTheme() {
+    if (this.state.theme === 'light') {
+      window.localStorage.setItem('theme', 'dark')
+      this.setTheme('dark');
+    } else {
+      window.localStorage.setItem('theme', 'light')
+      this.setTheme('light');
+    }
   }
 
   //open a specific modal
@@ -34,6 +52,11 @@ class App extends Component {
 
   componentDidMount() {
 
+    const localTheme = window.localStorage.getItem('theme');
+    if (localTheme) {
+      this.setTheme(localTheme);
+    }
+
     //load shows airing list from TVmaze API
     fetch("https://api.tvmaze.com/schedule")
       .then(res => res.json())
@@ -46,8 +69,9 @@ class App extends Component {
   }
 
   render() {
+    let theme = this.state.theme;
     return (
-      <div className="App">
+      <div className={`App ${theme}`}>
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand>
             <img
@@ -57,6 +81,9 @@ class App extends Component {
             />
             {'Shows Airing Today in USA'}
           </Navbar.Brand>
+          <Button variant="success" size="sm" onClick={this.toggleTheme}>
+            {(this.state.theme === 'dark') ?<i className="fa fa-sun-o" /> : <i className="fa fa-moon-o" />}
+          </Button>
         </Navbar>
         <Container>
           <Row>

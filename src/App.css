@@ -14,6 +14,18 @@
   margin-bottom: 20px; 
 }
 
+.App.dark {
+	background: #000;
+	color: #fff;
+	transition: 0.3s all;
+}
+
+.App.light {
+	background: #fff;
+	color: #000;
+	transition: 0.3s all;
+}
+
 .App-header {
   background-color: #222;
   height: 55px;
