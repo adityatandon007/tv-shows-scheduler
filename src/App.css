@@ -53,17 +53,15 @@ a {
 }
 
 .navbar-brand {
-  text-shadow: none !important;
-  position: absolute;
-  height: 60px;
-  left: 50%;
-  padding: 18px;
-  margin-left: -81px !important;
-  display: block; 
+  display: block;
+  width: 270px;
+  margin: 0 auto; 
 }
-
-.navbarTop {
-  background: red; 
+.navbarLogo {
+  width: 25px;
+  height: 25px;
+  margin-top: -8px;
+  margin-right: 4px;
 }
 
 .navbar-default {
@@ -77,6 +75,7 @@ a {
 .thumb {
   padding: 10px 0;
   width: 200px;
+  margin: 0 auto;
   animation: .8s ease-in-out 0s 1 fadein; 
 }
 

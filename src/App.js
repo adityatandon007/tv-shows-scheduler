@@ -52,9 +52,8 @@ class App extends Component {
           <Navbar.Brand>
             <img
               alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
+              src="/logo.png"
+              className="navbarLogo"
             />
             {'Shows Airing Today in USA'}
           </Navbar.Brand>
