@@ -9,6 +9,12 @@
 
 [![tv-shows-scheduler](https://i.imgur.com/b5MpmZe.png)](https://adityatandon.github.io/tv-shows-scheduler)
 
+## To Do
+
+- [x] Add Dark theme
+- [ ] Add support for different countries
+- [ ] Switch to a more elaborative api
+
 ## How to build
 
 To install, clone or download the repository.
