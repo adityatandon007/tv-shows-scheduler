@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tv-shows-scheduler/static/css/main.7a11fc2a.chunk.css",
+    "main.css": "/tv-shows-scheduler/static/css/main.5e353168.chunk.css",
     "main.js": "/tv-shows-scheduler/static/js/main.40257336.chunk.js",
     "main.js.map": "/tv-shows-scheduler/static/js/main.40257336.chunk.js.map",
     "runtime~main.js": "/tv-shows-scheduler/static/js/runtime~main.b9eca11a.js",
@@ -8,8 +8,8 @@
     "static/js/2.89c230e0.chunk.js": "/tv-shows-scheduler/static/js/2.89c230e0.chunk.js",
     "static/js/2.89c230e0.chunk.js.map": "/tv-shows-scheduler/static/js/2.89c230e0.chunk.js.map",
     "index.html": "/tv-shows-scheduler/index.html",
-    "precache-manifest.167a34f774432215272658e68b9d0daf.js": "/tv-shows-scheduler/precache-manifest.167a34f774432215272658e68b9d0daf.js",
+    "precache-manifest.4bb9aad1907ef2b3b32e232967460aad.js": "/tv-shows-scheduler/precache-manifest.4bb9aad1907ef2b3b32e232967460aad.js",
     "service-worker.js": "/tv-shows-scheduler/service-worker.js",
-    "static/css/main.7a11fc2a.chunk.css.map": "/tv-shows-scheduler/static/css/main.7a11fc2a.chunk.css.map"
+    "static/css/main.5e353168.chunk.css.map": "/tv-shows-scheduler/static/css/main.5e353168.chunk.css.map"
   }
 }
