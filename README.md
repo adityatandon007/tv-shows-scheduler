@@ -7,7 +7,7 @@
 > A React redux powered stopwatch timer app.
 **Hey!** :blush: This is a simple tv show scheduler app that displays the tv shows airing in USA. This app utilizes [TVmaze API](http://www.tvmaze.com/api) to get the schedule of shows.
 
-[![tv-shows-scheduler](https://i.imgur.com/b5MpmZe.png)](https://adityatandon.github.io/tv-shows-scheduler)
+[![tv-shows-scheduler](https://i.imgur.com/b5MpmZe.png)](https://adityatandon007.github.io/tv-shows-scheduler)
 
 ## To Do
 
