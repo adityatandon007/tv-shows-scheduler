@@ -5,7 +5,7 @@
 <a href="https://paypal.me/adityatandon007" target="_blank"></a>
 <a href="https://www.buymeacoffee.com/adityatandon007" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
 
-> A React redux powered stopwatch timer app.
+> A Tv Shows Scheduler powered by create-react-app.
 **Hey!** :blush: This is a simple tv show scheduler app that displays the tv shows airing in USA. This app utilizes [TVmaze API](http://www.tvmaze.com/api) to get the schedule of shows.
 
 [![tv-shows-scheduler](https://i.imgur.com/b5MpmZe.png)](https://adityatandon007.github.io/tv-shows-scheduler)
